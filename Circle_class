@@ -1,0 +1,29 @@
+class Circle(object):
+    #attribtue of the clas
+    pi = 3.14
+    def __init__(self, radius = 1 ):
+        self.radius = radius
+        self.perimeter = 2*Circle.pi*self.radius
+    def area(self):
+        #radius**2 * pi
+        return (self.radius**2) * Circle.pi
+    
+    def set_radius(self,new_radius):
+        """
+        Set the radius to a new value
+        """
+        self.radius = new_radius
+    
+    def get_radius(self):
+        """
+        Returns the current radius
+        """
+        return self.radius
+
+    
+    def get_perimeter(self):
+        """
+        Returns the current radius
+        """
+        return self.perimeter
+    
